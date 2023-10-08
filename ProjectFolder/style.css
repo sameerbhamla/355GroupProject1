@@ -1,16 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-*{
-    box-sizing: border-box;
+body {
+    background-color: #4883cf;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+nav1{
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+    
 }
 
-body{
-    font-family: "Roboto", san-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+nav1 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+
+nav1 a:hover{
+    color: rgb(114, 114, 114);
+    transition: ease-in 0.2s, ease-out 0.2s;
+}
+
+header {
+    color: rgb(111, 221, 255);
+    font-size: 500%;
     margin: 0;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    background-color: #4883cf;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+}
+
+header p{
+    color: rgb(255, 255, 255);
+    font-size: 23%;
+}
+section.border{
+    background: rgb(63, 96, 146);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 40%;
+    height: 60px;
+
+}
+section {
+    display: flex;
+}
+section div {
+    width: 100%;
+    Margin: 20px;
+    font-size: 300%;
+    height: 100px;
+    text-align: center;
+}
+section div a{
+    color: rgb(0, 53, 78);
+    text-decoration: none;
+}
+section div a:hover{
+    color: rgb(0, 0, 0);
+    transition: ease-in 0.2s, ease-out 0.2s;
+}
+section div.courses{
+    background-color: #4883cf;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    border-radius: 50%;
+    padding: 90px;
+}
+section div.goals{
+    background-color: #4883cf;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    border-radius: 50%;
+    padding: 90px;
+}
+section div.profile{
+    background-color: #4883cf;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    border-radius: 50%;
+    padding: 90px;
+}
+
+footer{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 78%;
+    height: 150px;
 }
