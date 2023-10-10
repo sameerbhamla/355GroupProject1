@@ -15,14 +15,41 @@ document.addEventListener("DOMContentLoaded", function () {
             goalList.appendChild(goalItem);
             newGoalInput.value = "";
 
-            goalItem.querySelector(".check-button").addEventListener("click", function () {
+            const checkButton = goalItem.querySelector(".check-button");
+            const deleteButton = goalItem.querySelector(".delete-button");
+
+            checkButton.addEventListener("click", function () {
                 goalItem.classList.toggle("completed");
-                this.textContent = goalItem.classList.contains("completed") ? "Uncheck" : "Check";
+                if (goalItem.classList.contains("completed")) {
+                    this.textContent = "Uncheck";
+                } else {
+                    this.textContent = "Check";
+                }
             });
 
-            goalItem.querySelector(".delete-button").addEventListener("click", function () {
+            deleteButton.addEventListener("click", function () {
                 goalItem.remove();
             });
         }
+    });
+
+    const checkButtons = document.querySelectorAll(".check-button");
+    checkButtons.forEach(function (checkButton) {
+        checkButton.addEventListener("click", function () {
+            const goalItem = this.parentElement;
+            goalItem.classList.toggle("completed");
+            if (goalItem.classList.contains("completed")) {
+                this.textContent = "Uncheck";
+            } else {
+                this.textContent = "Check";
+            }
+        });
+    });
+
+    const deleteButtons = document.querySelectorAll(".delete-button");
+    deleteButtons.forEach(function (deleteButton) {
+        deleteButton.addEventListener("click", function () {
+            this.parentElement.remove();
+        });
     });
 });
