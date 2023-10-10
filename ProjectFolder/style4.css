@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-container {
+    display: grid;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.pricing-option {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in;
+}
+
+.pricing-option:hover {
+    transform: scale(1.05);
+}
+
+.pricing-option.recommended {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    color: #555;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 10px 0;
+}
