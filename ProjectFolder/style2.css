@@ -118,8 +118,8 @@ p{
     color:#fff;
     font-size: 100%;
     padding:20px;
-    height:220px;
-    text-align : center;
+    height:auto;
+    text-align : left;
 }
 
 p ul li a{
@@ -140,6 +140,14 @@ img{
     height:250px;
     width:500px;
     padding:20px;
+}
+
+.catalog-item{
+    /* image to the left of the text */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
 }
 
 /* Stuff to change in the form */
