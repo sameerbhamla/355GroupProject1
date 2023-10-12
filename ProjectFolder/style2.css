@@ -174,5 +174,16 @@ p#confirmationMessage {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 40vh;
+}
+
+.foot{
+    display: flex;
+    background-color:#000;
+    color:#fff;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
