@@ -28,22 +28,57 @@
     <p>
         <ul>
             <a href="link1"><img src="image1.jpg" alt="IntroToHTML"></a>
-            <li><a href="link1">Introduction to HTML</a></li>
-            <p>Description: This is a beginner-friendly program designed to teach the fundamentals to Hypertext Markup Language. Studenst will learn how to create and structure web contecnt, including text, images, and links, while gaining a foundational understanding of web development and design principles.</p>
+            <p>Introcution to HTML: This is a beginner-friendly program designed to teach the fundamentals to Hypertext Markup Language. Studenst will learn how to create and structure web contecnt, including text, images, and links, while gaining a foundational understanding of web development and design principles.</p>
             
             <a href="link2"><img src="image2.jpg" alt="IntroToJavaScript"></a>
-            <li><a href="link2">Introduction to JavaScript</a></li>
-            <p>Description: This course that covers the fundamentals of JavaScript programming. Participants will learn how to write and implement JavaScript code, including variables, functions, and basic logic. This course provides a solid foundation for web development and interactive website design.</p>
+            <p>Introduction to Java Script: This course that covers the fundamentals of JavaScript programming. Participants will learn how to write and implement JavaScript code, including variables, functions, and basic logic. This course provides a solid foundation for web development and interactive website design.</p>
             
             <a href="link3"><img src="image3.jpg" alt="MachineAI"></a>
-            <li><a href="link3">Machine Learning and AI</a></li>
-            <p>Description: This course introduces students to the fundamentals of artificial intelligence and machine learning. It covers topics such as algorithms, data analysis, and neural networks, equipping learners with the skills to develop intelligent systems and make data-driven decisions.</p>
+            <p>Machine Learning and AI: This course introduces students to the fundamentals of artificial intelligence and machine learning. It covers topics such as algorithms, data analysis, and neural networks, equipping learners with the skills to develop intelligent systems and make data-driven decisions.</p>
             
             <a href="link4"><img src="image4.jpg" alt="InternetWebTech"></a>
-            <li><a href="link4">Internet and Web Technology</a></li>
-            <p>Description: This course covers the fundamentals of web development, including HTML, CSS, JavaScript, and web architecture. Students learn how to create and maintain websites, optimize user experiences, and understand the technologies that power the internet. This course is essential for aspiring web developers and digital professionals.</p>
+            <p>Internet and Web Technology: This course covers the fundamentals of web development, including HTML, CSS, JavaScript, and web architecture. Students learn how to create and maintain websites, optimize user experiences, and understand the technologies that power the internet. This course is essential for aspiring web developers and digital professionals.</p>
         </ul>
     </p>
+    <div class="subform">
+        <p>Interested? Fill out the following form to let us know your interests and we will get back to you through e-mail ASAP</p>
+        <form action="Linktosubmitform" method="post" onsubmit="return showConfirmation();">
+        <label for="interest">Intro to HTML:</label>
+        <select name="interest" id="interest">
+            <option value="interested">Interested</option>
+            <option value="not_interested">Not Interested</option>
+        </select>
+        <br>
+
+        <label for="interest">Intro to JavaScript:</label>
+        <select name="interest" id="interest">
+            <option value="interested">Interested</option>
+            <option value="not_interested">Not Interested</option>
+        </select>
+        <br>
+
+        <label for="interest">Machine Learning and AI:</label>
+        <select name="interest" id="interest">
+            <option value="interested">Interested</option>
+            <option value="not_interested">Not Interested</option>
+        </select>
+        <br>
+
+        <label for="interest">Internet and Web Technology:</label>
+        <select name="interest" id="interest">
+            <option value="interested">Interested</option>
+            <option value="not_interested">Not Interested</option>
+        </select>
+        <br>
+
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p id="confirmationMessage"></p>
+    </div>
     <script src="script2.js"></script>
 </body>
 <footer>

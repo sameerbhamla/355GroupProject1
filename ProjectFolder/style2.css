@@ -122,13 +122,57 @@ p{
     text-align : center;
 }
 
+p ul li a{
+    display:flex;
+    list-style-type: none;
+    position:relative;
+    color:#000;
+    text-decoration:none;
+    margin: 0 10px;
+    opacity:1;
+}
+
 img{
     image-rendering: auto;
     display:flex;
     align-items:center;
     justify-content: center;
-    position:relative;
     height:250px;
     width:500px;
     padding:20px;
+}
+
+/* Stuff to change in the form */
+label[for="interest"] {
+    color: #fff;
+}
+label[for="email"]{
+    color:#fff;
+}
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+select#interest {
+    color:#000;
+    font-size: 16px;
+    width: 200px;
+}
+input#email {
+    font-size: 16px;
+    width: 300px;
+}
+p#confirmationMessage {
+    font-size: 18px;
+    color: #4CAF50; 
+}
+
+.subform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
 }
