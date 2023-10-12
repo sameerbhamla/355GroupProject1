@@ -121,3 +121,14 @@ p{
     height:220px;
     text-align : center;
 }
+
+img{
+    image-rendering: auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    height:250px;
+    width:500px;
+    padding:20px;
+}
