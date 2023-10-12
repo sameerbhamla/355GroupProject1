@@ -112,3 +112,12 @@ header p{
     color: rgb(255, 255, 255);
     font-size: 40%;
 }
+
+p{
+    margin:0;
+    color:#fff;
+    font-size: 100%;
+    padding:20px;
+    height:220px;
+    text-align : center;
+}
