@@ -99,10 +99,10 @@ nav.active .icon .line2{
 
 header {
     color: rgb(111, 221, 255);
-    font-size: 500%;
+    font-size: 200%;
     margin: 0;
     padding: 20px;
-    height: 300px;
+    height: 180px;
     text-align: center;
     background-color: #4883cf;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
@@ -110,5 +110,5 @@ header {
 
 header p{
     color: rgb(255, 255, 255);
-    font-size: 23%;
+    font-size: 40%;
 }
