@@ -7,23 +7,78 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
-nav1{
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    width: 100%;
+#topNav {
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  width: 100%;
 }
 
-nav1 a{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin-left: 3px;
+#topNav a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 5px;
+  
 }
 
-nav1 a:hover{
-    color: rgb(114, 114, 114);
-    transition: ease-in 0.2s, ease-out 0.2s;
+#topNav a:hover{
+  color: rgb(114, 114, 114);
+  transition: ease-in 0.2s, ease-out 0.2s;
+}
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  background-color: #000;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.bar {
+  background-color: #fff;
+  height: 4px;
+  width: 24px;
+  margin: 5px 3px;
+  border-radius: 3px;
+}
+
+#navLinks.hidden {
+  display: none;
+}
+
+#navLinks {
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  width: 100%;
+}
+
+#navLinks a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+#navLinks a:hover {
+  color: rgb(114, 114, 114);
+  transition: ease-in 0.2s, ease-out 0.2s;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+      display: none;
+  }
+
+  #navLinks.hidden {
+      display: flex;
+  }
 }
 
 .pricing-container {
@@ -31,8 +86,6 @@ nav1 a:hover{
     justify-content: space-around;
     padding: 50px;
 }
-
-
 
 .pricing-option {
     background: linear-gradient(to bottom, #ffffff, #f0f0f0);
@@ -63,7 +116,7 @@ p {
     color: #555;
 }
 
-a {
+a.action-link {
     display: block;
     margin-top: 20px;
     background-color: #007BFF;
@@ -74,7 +127,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
+a.action-link:hover {
     background-color: #0056b3;
 }
 

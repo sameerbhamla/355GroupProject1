@@ -4,7 +4,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
-nav1{
+
+#topNav {
     display: flex;
     align-items: center;
     background: rgb(0, 0, 0);
@@ -13,15 +14,14 @@ nav1{
     
 }
 
-
-nav1 a{
+#topNav a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 5px;
     
 }
 
-nav1 a:hover{
+#topNav a:hover{
     color: rgb(114, 114, 114);
     transition: ease-in 0.2s, ease-out 0.2s;
 }
@@ -143,11 +143,11 @@ footer{
 }
 
 @media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
+  .menu-toggle {
+      display: none;
+  }
 
-    #navLinks.hidden {
-        display: flex;
-    }
+  #navLinks.hidden {
+      display: flex;
+  }
 }
