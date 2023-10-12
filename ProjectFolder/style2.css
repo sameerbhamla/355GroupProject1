@@ -1,0 +1,21 @@
+nav1{
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+    
+}
+
+
+nav1 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+
+nav1 a:hover{
+    color: rgb(114, 114, 114);
+    transition: ease-in 0.2s, ease-out 0.2s;
+}
