@@ -177,12 +177,42 @@ p#confirmationMessage {
     color: #4CAF50; 
 }
 
-.subform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.interest-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 0 auto;
+}
+
+label {
+  grid-column: 1
+}
+
+select {
+  grid-column: 2;
+}
+
+input {
+  grid-column: 2;
+}
+
+input#email {
+  width: 200px;
 }
 
 .foot{

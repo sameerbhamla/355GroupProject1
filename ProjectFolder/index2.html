@@ -61,44 +61,45 @@
           digital professionals.</p>
       </div>
     </div>
-    <div class="subform">
-        <p>Interested? Fill out the following form to let us know your interests and we will get back to you through e-mail ASAP</p>
-        <form action="Linktosubmitform" method="post" onsubmit="return showConfirmation();">
-        <label for="interest">Intro to HTML:</label>
-        <select name="interest" id="interest">
-            <option value="interested">Interested</option>
-            <option value="not_interested">Not Interested</option>
-        </select>
-        <br>
+    <div class="interest">
+      <p>Interested? Fill out the following form to let us know your interests and we will get back to you through e-mail ASAP</p>
+        <form class="interest-form" action="Linktosubmitform" method="post" onsubmit="return showConfirmation();">
+          <div class="form-group">
+            <label for="interest">Intro to HTML:</label>
+            <select name="interest" id="interest">
+                <option value="interested">Interested</option>
+                <option value="not_interested">Not Interested</option>
+            </select>
+            <br>
 
-        <label for="interest">Intro to JavaScript:</label>
-        <select name="interest" id="interest">
-            <option value="interested">Interested</option>
-            <option value="not_interested">Not Interested</option>
-        </select>
-        <br>
+            <label for="interest">Intro to JavaScript:</label>
+            <select name="interest" id="interest">
+                <option value="interested">Interested</option>
+                <option value="not_interested">Not Interested</option>
+            </select>
+            <br>
 
-        <label for="interest">Machine Learning and AI:</label>
-        <select name="interest" id="interest">
-            <option value="interested">Interested</option>
-            <option value="not_interested">Not Interested</option>
-        </select>
-        <br>
+            <label for="interest">Machine Learning and AI:</label>
+            <select name="interest" id="interest">
+                <option value="interested">Interested</option>
+                <option value="not_interested">Not Interested</option>
+            </select>
+            <br>
 
-        <label for="interest">Internet and Web Technology:</label>
-        <select name="interest" id="interest">
-            <option value="interested">Interested</option>
-            <option value="not_interested">Not Interested</option>
-        </select>
-        <br>
+            <label for="interest">Internet and Web Technology:</label>
+            <select name="interest" id="interest">
+                <option value="interested">Interested</option>
+                <option value="not_interested">Not Interested</option>
+            </select>
+            <br>
 
-        <label for="email">Email address:</label>
-        <input type="email" name="email" id="email" required>
-        <br>
-
-        <input type="submit" value="Submit">
-    </form>
-    <p id="confirmationMessage"></p>
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+          </div> 
+          <input type="submit" value="Submit">
+      </form>
+      <p id="confirmationMessage"></p>
     </div>
     <script src="script2.js"></script>
 </body>
