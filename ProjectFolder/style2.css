@@ -103,7 +103,7 @@ header {
   font-size: 200%;
   margin: 0;
   padding: 20px;
-  height: 180px;
+  height: auto;
   text-align: center;
   background-color: #4883cf;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
