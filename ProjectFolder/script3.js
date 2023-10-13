@@ -52,4 +52,73 @@ document.addEventListener("DOMContentLoaded", function () {
             this.parentElement.remove();
         });
     });
+
+  const progressButtons = document.querySelectorAll(".progress-button");
+  progressButtons.forEach(function (progressButton) {
+    progressButton.addEventListener("click", function () {
+      const progressContainer = this.parentElement.querySelector(".progress-container");
+      if (progressContainer.classList.contains("hidden")) {
+        progressContainer.classList.remove("hidden");
+        this.parentElement.classList.add("expanded");
+        this.textContent = "Hide Progress";
+      } else {
+        progressContainer.classList.add("hidden");
+        this.parentElement.classList.remove("expanded");
+        this.textContent = "Show Progress";
+      }
+    });
+  });
+
+  const progressContainers = document.querySelectorAll(".progress-container");
+  progressContainers.forEach(function (progressContainer) {
+    const progress = progressContainer.querySelector('.progress');
+    const prev = progressContainer.querySelector('#prev');
+    const next = progressContainer.querySelector('#next');
+    const circles = progressContainer.querySelectorAll('.circle');
+
+    let currentActive = 1;
+
+    next.addEventListener('click', () => {
+      currentActive++;
+
+      if (currentActive > circles.length) {
+        currentActive = circles.length;
+      }
+
+      update();
+    })
+
+    prev.addEventListener('click', () => {
+      currentActive--;
+
+      if (currentActive < 1) {
+        currentActive = 1;
+      }
+
+      update();
+    })
+
+    function update() {
+      circles.forEach((circle, idx) => {
+        if (idx < currentActive) {
+          circle.classList.add('active');
+        } else {
+          circle.classList.remove('active');
+        }
+      })
+
+      const actives = progressContainer.querySelectorAll('.circle.active');
+
+      progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%';
+
+      if (currentActive === 1) {
+        prev.disabled = true;
+      } else if (currentActive === circles.length) {
+        next.disabled = true;
+      } else {
+        prev.disabled = false;
+        next.disabled = false;
+      }
+    }
+  });
 });
