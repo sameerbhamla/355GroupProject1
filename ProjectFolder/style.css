@@ -11,7 +11,7 @@ body {
     background: rgb(0, 0, 0);
     padding: 10px;
     width: 100%;
-    
+
 }
 
 #topNav a{
@@ -31,7 +31,7 @@ header {
     font-size: 500%;
     margin: 0;
     padding: 20px;
-    height: 300px;
+    height: auto;
     text-align: center;
     background-color: #4883cf;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
