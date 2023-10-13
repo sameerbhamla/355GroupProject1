@@ -84,6 +84,7 @@ body {
 .pricing-container {
   display: grid;
   justify-content: space-around;
+  grid-gap: 50px;
   padding: 50px;
 }
 
