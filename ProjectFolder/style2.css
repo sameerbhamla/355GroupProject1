@@ -221,7 +221,7 @@ input#email {
   width: 200px;
 }
 
-.foot {
+footer {
   display: flex;
   background-color: #000;
   color: #fff;
@@ -229,5 +229,6 @@ input#email {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  padding: 20px;
+  height: auto;
 }

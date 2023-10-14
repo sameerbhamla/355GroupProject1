@@ -239,3 +239,15 @@ ul li:nth-child(even) {
   padding: 10px;
   border-radius: 5px;
 }
+
+footer {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: auto;
+}
