@@ -57,9 +57,13 @@ section {
   display: flex;
 }
 
+section.options {
+  padding: 20px;
+}
+
 section div {
   width: 100%;
-  Margin: 20px;
+  margin: 20px;
   font-size: 300%;
   height: 100px;
   text-align: center;
