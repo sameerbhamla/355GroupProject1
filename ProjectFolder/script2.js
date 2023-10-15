@@ -7,10 +7,21 @@ toggle.addEventListener('click', function(){
 })
 
 function showConfirmation() {
-    var confirmationMessage = document.getElementById("confirmationMessage");
-    confirmationMessage.innerHTML = "Your interests have been submitted";
-    setTimeout(function() {
-        confirmationMessage.innerHTML = ''; // Clear the message
-    }, 5000);
-    return false;
+  const toasts = document.getElementById('toasts');
+
+  const message = "Your interests have been submitted.";
+
+  const notif = document.createElement('div');
+  
+  notif.classList.add('toast');
+
+  notif.innerText = message;
+
+  toasts.appendChild(notif);
+
+  setTimeout(() => {
+      notif.remove()
+  }, 3000);
+
+  return false;
 }
