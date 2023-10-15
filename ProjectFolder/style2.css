@@ -12,9 +12,13 @@ body {
   margin: 0;
 }
 
+.head {
+  background-color: black;
+}
+
 nav {
   font-family: "Muli", sans-serif;
-  background-color: #fff;
+  background-color: #000000;
   padding: 20px;
   width: 80px;
   background-image: linear-gradient(#5290f9);
@@ -56,13 +60,13 @@ nav.active ul li {
 
 nav ul a {
   position: relative;
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .icon {
-  background-color: #fff;
+  background-color: #000000;
   border: 0;
   cursor: pointer;
   padding: 0;
@@ -76,7 +80,7 @@ nav ul a {
 }
 
 .icon .line {
-  background-color: #5290f9;
+  background-color: #ffffff;
   height: 2px;
   position: absolute;
   width: 20px;
