@@ -144,14 +144,12 @@ img {
 }
 
 .catalog-item {
-  /* image to the left of the text */
   display: flex;
   flex-direction: row;
   align-items: center;
   height: auto;
 }
 
-/* Stuff to change in the form */
 label[for="interest"] {
   color: #fff;
 }
