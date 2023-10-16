@@ -10,12 +10,27 @@ document.addEventListener("DOMContentLoaded", function () {
             goalItem.innerHTML = `
                 <span class="goal-text">${goalText}</span>
                 <button class="check-button">Check</button>
+                <button class="progress-button">Show Progress</button>
                 <button class="delete-button">Delete</button>
+                <div class="progress-container hidden">
+                  <div class="progress-steps-container">
+                    <div class="progress" id="progress"></div>
+                    <div class="circle active">1</div>
+                    <div class="circle">2</div>
+                    <div class="circle">3</div>
+                    <div class="circle">4</div>
+                  </div>
+                  <div class="progress-increment-buttons">
+                    <button class="btn" id="prev" disabled>Prev</button>
+                    <button class="btn" id="next">Next</button>
+                  </div>
+                </div>
             `;
             goalList.appendChild(goalItem);
             newGoalInput.value = "";
 
             const checkButton = goalItem.querySelector(".check-button");
+            const progressButton = goalItem.querySelector(".progress-button");
             const deleteButton = goalItem.querySelector(".delete-button");
 
             checkButton.addEventListener("click", function () {
@@ -25,6 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     this.textContent = "Check";
                 }
+            });
+
+            progressButton.addEventListener("click", function () {
+              const progressContainer = this.parentElement.querySelector(".progress-container");
+              if (progressContainer.classList.contains("hidden")) {
+                progressContainer.classList.remove("hidden");
+                this.parentElement.classList.add("expanded");
+                this.textContent = "Hide Progress";
+              } else {
+                progressContainer.classList.add("hidden");
+                this.parentElement.classList.remove("expanded");
+                this.textContent = "Show Progress";
+              }
             });
 
             deleteButton.addEventListener("click", function () {
